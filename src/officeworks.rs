@@ -45,7 +45,7 @@ pub fn officeworks_sort<T: ToString>(arr: &[T]) -> Result<Vec<String>, ureq::Err
                     "requests": [
                         {
                             "indexName": "prod-product-wc-bestmatch-personal",
-                            "params": format!("{}{}", "query=", item_encoded)
+                            "params": format!("query={}", item_encoded)
                         }
                     ]
                 }))?
